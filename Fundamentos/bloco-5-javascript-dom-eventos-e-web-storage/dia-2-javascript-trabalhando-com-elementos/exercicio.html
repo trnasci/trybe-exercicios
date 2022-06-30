@@ -55,9 +55,56 @@
       }
     </style>
   </head>
-  <body>
+  <body id="body1">
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      let h1 = document.createElement('h1');
+      h1.innerText ='Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(h1);
+
+      let eleMain = document.createElement('main');
+      eleMain.className = 'main-content';
+      document.body.appendChild(eleMain);
+
+      let tagSection = document.createElement('section');
+      tagSection.className = 'center-content';
+      eleMain.appendChild(tagSection);
+
+      let tagP = document.createElement('p');
+      tagP.innerHTML = 'testando123';
+      tagSection.appendChild(tagP);
+
+      let secLeft = document.createElement('section');
+      secLeft.className = 'left-content';
+      eleMain.appendChild(secLeft);
+
+      let secRight = document.createElement('section');
+      secRight.className = 'right-content';
+      eleMain.appendChild(secRight);
+      
+      let imagem = document.createElement('img');
+      imagem.className = 'small-image';
+      imagem.src = 'https://picsum.photos/200';
+      secLeft.appendChild(imagem);
+
+      let list = document.createElement('ul');
+      secRight.appendChild(list);
+      let itemList = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez'];
+      for (const i of itemList) {
+          let descList = document.createElement('li');
+          descList.innerText = i;
+          list.appendChild(descList);         
+
+      }
+
+
+
+
+
+
+
+
+
+
     </script>
   </body>
 </html>
