@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="text-center mb-5">
+        <h1>TrybeTrip</h1>
+    </header>
+    <main class="container text-center">
+        <fieldset class="fieldset">
+            <legend> Trybe</legend>
+            <form action="" method="get" enctype="multipart/form-data">
+                <div>
+                    <label for="nome-completo">Nome :
+                        <input type="text" name="nome" id="nome-completo">
+                    </label>
+                </div>
+                <div>
+                    <label for="email">E-mail :
+                        <input type="email" name="email" id="email">
+                    </label>
+                </div>
+
+                <label for="option">
+                    Destino Preferido:
+                    <br>
+                    <label for="option1">
+                        <input type="radio" name="option" id="option1" value="Cidade">Cidade
+                    </label>
+                    <label for="option2">
+                        <input type="radio" name="option" id="option2" value="Cidade">Campo
+                    </label>
+                    <label for="option3">
+                        <input type="radio" name="option" id="option3" value="Cidade">Praia
+                    </label>
+                    <label for="option4">
+                        <input type="radio" name="option" id="option4" value="Cidade">Montanha
+                    </label>
+
+                    <br>
+                    <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                    <br>
+                    <textarea name="resposta" id="area-resposta" cols="30" rows="10"></textarea>
+                    <br>
+                    <label for="date">Data:
+                        <input type="date" name="date" id="date">
+                    </label>
+                    <br>
+                    <label for="conc">
+                        <input type="checkbox" name="conc-1" value="sim gostaria" id="conc">
+                        Gostaria de receber outras incríveis oportunidades
+                        oferecidas pela Trybe?
+                        <br>
+                        <input type="checkbox" name="conc-2" value="sim gostaria" id="conc">
+                        Concordo que imagens das minhas férias poderão ser usadas
+                        na divulgação de concursos futuros.
+                    </label>
+                    <br>
+                    <br>
+                    <button class="btn btn-dark" type="submit">Enviar</button>
+                    <button class="btn " type="reset">Limpar</button>
+            </form>
+        </fieldset>
+
+    </main>
+
+
+    <script
+        src="/media/thiagonascimento/HD 2/trybe-exercicios/Fundamentos/bloco-6-html-e-css-forms-flexbox-e-responsivo/dia-2-bibliotecas-javascript-e-frameworks-css/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
