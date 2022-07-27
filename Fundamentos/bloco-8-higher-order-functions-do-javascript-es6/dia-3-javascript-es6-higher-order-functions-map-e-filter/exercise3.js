@@ -61,13 +61,7 @@ const books = [
     },
   ];
   
-  const nameAndAge = (array) => {
-    const result = array.map((element) => ({    
-      age: (element.releaseYear - element.author.birthYear),
-      author: element.author.name,
-    })
-    )
-    return result.sort((a, b) => a.age - b.age);
-  };
-
-  console.log(nameAndAge(books));
+  function fantasyOrScienceFiction(array) {
+    return array.filter((element) => element.genre === 'Ficção Científica' || element.genre === 'Fantasia') 
+    }
+  console.log(fantasyOrScienceFiction(books));
